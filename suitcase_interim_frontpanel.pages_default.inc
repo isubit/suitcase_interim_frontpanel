@@ -98,6 +98,8 @@ function suitcase_interim_frontpanel_default_page_manager_pages() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '8684b49f-f9dc-494a-bcf8-e00be0bdebdd';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_front_panel_context';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -166,28 +168,6 @@ function suitcase_interim_frontpanel_default_page_manager_pages() {
   $pane->uuid = '58b5acd2-8f0e-4a50-9508-1012c014d1f4';
   $display->content['new-58b5acd2-8f0e-4a50-9508-1012c014d1f4'] = $pane;
   $display->panels['top'][0] = 'new-58b5acd2-8f0e-4a50-9508-1012c014d1f4';
-  $pane = new stdClass();
-  $pane->pid = 'new-1144a2fc-9c2b-4d46-aa13-2c8e39511f1e';
-  $pane->panel = 'top';
-  $pane->type = 'block';
-  $pane->subtype = 'search-form';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array(
-    'override_title' => 1,
-    'override_title_text' => 'search',
-  );
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 1;
-  $pane->locks = array();
-  $pane->uuid = '1144a2fc-9c2b-4d46-aa13-2c8e39511f1e';
-  $display->content['new-1144a2fc-9c2b-4d46-aa13-2c8e39511f1e'] = $pane;
-  $display->panels['top'][1] = 'new-1144a2fc-9c2b-4d46-aa13-2c8e39511f1e';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
