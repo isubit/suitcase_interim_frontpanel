@@ -43,7 +43,7 @@ function suitcase_interim_frontpanel_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'omega_12_threecol_4_4_4_stacked';
+  $display->layout = 'suitcase_megapanels';
   $display->layout_settings = array(
     'items' => array(
       'canvas' => array(
@@ -90,6 +90,20 @@ function suitcase_interim_frontpanel_default_page_manager_pages() {
       'middle' => NULL,
       'right' => NULL,
       'bottom' => NULL,
+      'top_full' => NULL,
+      'top_1' => NULL,
+      'top_2' => NULL,
+      'top_3' => NULL,
+      'top_4' => NULL,
+      'middle_1' => NULL,
+      'middle_2' => NULL,
+      'middle_3' => NULL,
+      'middle_4' => NULL,
+      'bottom_1' => NULL,
+      'bottom_2' => NULL,
+      'bottom_3' => NULL,
+      'bottom_4' => NULL,
+      'bottom_full' => NULL,
     ),
     'top' => array(
       'style' => '-1',
@@ -104,7 +118,7 @@ function suitcase_interim_frontpanel_default_page_manager_pages() {
   $display->panels = array();
   $pane = new stdClass();
   $pane->pid = 'new-f894acdd-586a-473f-8f3d-d3c6a6aec1e9';
-  $pane->panel = 'left';
+  $pane->panel = 'top_1';
   $pane->type = 'block';
   $pane->subtype = 'views-events-block_2';
   $pane->shown = TRUE;
@@ -123,10 +137,10 @@ function suitcase_interim_frontpanel_default_page_manager_pages() {
   $pane->locks = array();
   $pane->uuid = 'f894acdd-586a-473f-8f3d-d3c6a6aec1e9';
   $display->content['new-f894acdd-586a-473f-8f3d-d3c6a6aec1e9'] = $pane;
-  $display->panels['left'][0] = 'new-f894acdd-586a-473f-8f3d-d3c6a6aec1e9';
+  $display->panels['top_1'][0] = 'new-f894acdd-586a-473f-8f3d-d3c6a6aec1e9';
   $pane = new stdClass();
   $pane->pid = 'new-ab92fb28-bb69-47bb-bb6f-9fe175d4871e';
-  $pane->panel = 'middle';
+  $pane->panel = 'top_2';
   $pane->type = 'block';
   $pane->subtype = 'views-news-block';
   $pane->shown = TRUE;
@@ -145,10 +159,10 @@ function suitcase_interim_frontpanel_default_page_manager_pages() {
   $pane->locks = array();
   $pane->uuid = 'ab92fb28-bb69-47bb-bb6f-9fe175d4871e';
   $display->content['new-ab92fb28-bb69-47bb-bb6f-9fe175d4871e'] = $pane;
-  $display->panels['middle'][0] = 'new-ab92fb28-bb69-47bb-bb6f-9fe175d4871e';
+  $display->panels['top_2'][0] = 'new-ab92fb28-bb69-47bb-bb6f-9fe175d4871e';
   $pane = new stdClass();
   $pane->pid = 'new-58b5acd2-8f0e-4a50-9508-1012c014d1f4';
-  $pane->panel = 'top';
+  $pane->panel = 'top_full';
   $pane->type = 'block';
   $pane->subtype = 'views-fb2fc43dce4ac8d1859576c2d1c70c5f';
   $pane->shown = TRUE;
@@ -167,7 +181,7 @@ function suitcase_interim_frontpanel_default_page_manager_pages() {
   $pane->locks = array();
   $pane->uuid = '58b5acd2-8f0e-4a50-9508-1012c014d1f4';
   $display->content['new-58b5acd2-8f0e-4a50-9508-1012c014d1f4'] = $pane;
-  $display->panels['top'][0] = 'new-58b5acd2-8f0e-4a50-9508-1012c014d1f4';
+  $display->panels['top_full'][0] = 'new-58b5acd2-8f0e-4a50-9508-1012c014d1f4';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
