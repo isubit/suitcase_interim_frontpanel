@@ -9,6 +9,7 @@ dependencies[] = luggage_events
 dependencies[] = luggage_news
 dependencies[] = page_manager
 dependencies[] = strongarm
+dependencies[] = panels
 features[ctools][] = page_manager:pages_default:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
